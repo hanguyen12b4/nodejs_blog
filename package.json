@@ -26,7 +26,7 @@
   "homepage": "https://github.com/hanguyen12b4/nodejs_blog#readme",
   "husky" : {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run beautiful"
     }
   },
   "lint-staged": {
