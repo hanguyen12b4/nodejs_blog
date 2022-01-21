@@ -23,17 +23,25 @@
     "url": "https://github.com/hanguyen12b4/nodejs_blog/issues"
   },
   "homepage": "https://github.com/hanguyen12b4/nodejs_blog#readme",
-  "husky" :{
+  "husky": {
     "hooks": {
-      "pre-commit": ["lint-staged", "git add ."]
+      "pre-commit": [
+        "lint-staged",
+        "git add ."
+      ]
     }
   },
   "lint-staged": {
-    "src/**/*.{js,json,scss}":"prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "dependencies": {
     "express": "^4.17.2",
-    "express-handlebars": "^6.0.2"
+    "express-handlebars": "^6.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.6",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-sequence": "^5.3.1",
+    "mongoose-slug-generator": "^1.0.4"
   },
   "devDependencies": {
     "husky": "^7.0.4",
